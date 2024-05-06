@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood Wide Web</title>
+  <link rel="stylesheet" href="/style.css" />
+    <script>
+        // Define an array of different content items
+        var content = [
+            "Nature changes everyday.",
+            "It's hard to see the same views in nature.",
+            "Things in the Internet and nature all rely on each other."
+        ];
+
+        // Function to display random content
+        function displayRandomContent() {
+            // Generate a random index to select content from the array
+            var randomIndex = Math.floor(Math.random() * content.length);
+            // Get the element where the content will be displayed
+            var contentElement = document.getElementById("random-content");
+            // Set the inner HTML of the element to the randomly selected content
+            contentElement.innerHTML = content[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Content</h1> 
+  <p>
+    Refresh to see more
+  </p>
+    <div id="random-content">
+        <!-- Content will be displayed here -->
+    </div>
+    <!-- Call the function to display random content when the page loads -->
+    <script>
+        displayRandomContent();
+    </script>
+</body>
+</html>

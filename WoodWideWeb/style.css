@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: pink;
+
+}
+p {
+  color: cornflowerBlue;
+  text-decoration: none
+}
+h1 {
+  color: black;
+  font-size: 30px;
+}
